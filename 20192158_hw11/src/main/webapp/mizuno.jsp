@@ -1,0 +1,59 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ page import="java.util.Date"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Main Page</title>
+</head>
+<body>
+	<jsp:include page="menu.jsp" />
+	<div class="center-text">
+		<div class="responsive-box">
+			<h1>웹 쇼핑몰에 오신 것을 환영합니다.</h1>
+		</div>
+	</div>
+
+	<div class="center-text">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<img
+						src="data:image/png;base64,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"
+						class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title">미즈노</h5>
+						<p class="card-text">일본의 전통과 혁신이 결합된 골프 클럽과 의류 전문 브랜드.</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col">
+				<div class="col-md-2">제품코드</div>
+				p002
+				<div class="col-md-2">제품 이름</div>
+				아이언 세트 <br>
+				<div class="col-md-2">제품 설명</div>
+				100m이상 정교하게 보낼 수 있는 아이언 판매중.
+
+
+
+			</div>
+
+		</div>
+		<a href="loginIndex.jsp" class="btn btn-primary bottom-btn">돌아가기</a>
+	</div>
+
+
+	<div class="center-text">
+		<br>
+		<p>Welcome to web Market!</p>
+		<br>
+		<p>
+			현재 접속 시각 :
+			<%=new Date()%></p>
+	</div>
+	<jsp:include page="footer.jsp" />
+</body>
+</html>
